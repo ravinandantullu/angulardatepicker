@@ -1,0 +1,33 @@
+<div id="datepicker">
+  <div class="row">
+    <div>
+      <h2>Date Picker Component</h2>
+    </div>
+    <div>
+      <h2>
+        From Date
+      </h2>
+    </div>
+    <div class="datepicker-fromdate">
+      <md-input-container>
+        <input mdInput [max]="maxFromDate" [mdDatepicker]="frompicker" placeholder="Choose a from date" [ngModel]="fromDateTime"
+          (ngModelChange)="onChangeFromDate($event)" readonly>
+        <button mdSuffix [mdDatepickerToggle]="frompicker"></button>
+      </md-input-container>
+      <md-datepicker #frompicker></md-datepicker>
+    </div>
+    <div>
+      <h2>
+        To Date
+      </h2>
+    </div>
+    <div class="datepicker-todate">
+      <md-input-container>
+        <input mdInput [min]="minToDate" [max]="maxToDate" [mdDatepicker]="topicker" placeholder="Choose a to  date" [ngModel]="toDateTime"
+          (ngModelChange)="onChangeToDate($event)" readonly>
+        <button mdSuffix [mdDatepickerToggle]="topicker"></button>
+      </md-input-container>
+      <md-datepicker #topicker></md-datepicker>
+    </div>
+  </div>
+</div>

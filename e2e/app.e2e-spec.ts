@@ -1,14 +1,14 @@
-import { DatepickerPage } from './app.po';
+import { AngulardatepickerPage } from './app.po';
 
-describe('datepicker App', () => {
-  let page: DatepickerPage;
+describe('angulardatepicker App', () => {
+  let page: AngulardatepickerPage;
 
   beforeEach(() => {
-    page = new DatepickerPage();
+    page = new AngulardatepickerPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
